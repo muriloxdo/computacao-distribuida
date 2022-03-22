@@ -1,0 +1,207 @@
+:root {
+    --multisom-primary: #FF6600;
+    --schumann-primary: #1DBBEF;
+    
+    --multisom-primary-opacity: #ff660066;
+    --schumann-primary-opacity: #1dbbef66;
+    /*company*/
+    --actual-company-primary: var(--schumann-primary);
+    --actual-company-primary-opacity: var(--schumann-primary-opacity);
+    /*/company*/
+    --container-color: rgb(249,249,249);
+    --backgroud-color: #FFFFFF;
+}
+.spinner-border {
+    margin-top: 1rem !important;
+    width: 175px !important;
+    height: 175px !important;
+    color: var(--actual-company-primary);
+}
+.bg-container {
+    background-color: var(--container-color);
+    padding: 1rem !important;
+}
+.bkcolor {
+    background-color: var(--container-color);
+}
+body {
+    min-height:100vh;
+}
+.flex-fill {
+    flex:1 1 auto;
+}
+.bg-company {
+    background-color: var(--actual-company-primary);
+    color: #ffffff;
+}
+.bg-warning {
+    background-color: var(--actual-company-primary);
+    color: #ffffff;
+}
+.bg-back {
+    background-color: #adadad;
+    color: #ffffff;
+}
+.bg-p-back {
+    background-color: #000!important;
+    color: #fff!important;
+}
+.inc-font {
+    font-size: 1.2rem;
+    display: inline !important;
+    padding-left: 1rem !important;
+}
+.form-check-input:checked {
+    background-color: var(--actual-company-primary) !important;
+    border-color: var(--actual-company-primary) !important;
+}
+.form-check-input {
+    margin-left: 0rem !important;
+    width: 4em !important;
+    height: 2em !important;
+}
+.form-check {
+    margin-left: 0rem !important;
+    margin-top: 1rem !important;
+}
+.btn-right {
+    float: right;
+    margin-left: 1%;
+}
+.flex-shrink-0 {
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .form-switch {
+        padding-left: 0rem !important;
+    }
+    .bg-container {
+        background-color: var(--backgroud-color);
+        width: 85% !important;
+        padding: 1rem !important;
+        margin-top: 0 !important;
+    }
+    #nav-brand {
+        margin-left: 0rem !important;
+        margin: auto !important;
+    }
+    .navbar-brand {
+        margin-right: 0;
+    }
+    .inc-font {
+        font-size: 1.1rem;
+        display: inline !important;
+        margin-top: 0 !important;
+        padding-left: 0.5rem !important;
+        margin-right: 0rem !important;
+    }
+    .form-check-input:checked {
+        background-color: var(--actual-company-primary) !important;
+        border-color: var(--actual-company-primary) !important;
+    }
+    .form-check-input {
+        width: 3em !important;
+        height: 1.5em !important;
+    }
+    .form-check {
+        margin-top: 0.5rem;
+    }
+    .btn-right {
+        width: 100% !important;
+    }
+    .g-recaptcha {
+        margin-top: 1rem !important;
+        display: inline-block !important;
+        margin-top: 1em;
+        text-align: center;
+        width: auto !important;
+        height: auto !important;
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+    .mg-token{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+    .wt-auto{
+        width: 100%!important;
+    }
+    .w-form{
+        width: 90% !important;
+    }
+}
+
+.disable-decoration-a{
+    text-decoration: none;
+    color: #352a2c;
+}
+.disable-decoration-a:hover{
+    text-decoration: none;
+    color: #352a2c;
+}
+
+/* Tabela de parceiros */
+.table{
+    --bs-table-hover-bg: var(--actual-company-primary-opacity);
+}
+
+.radio{
+    display:inline-block;
+}
+.active{
+    background: var(--actual-company-primary);
+    color:#352a2c;
+}
+
+/* Appearance only */
+.radio{
+    padding:3px 7px;
+    margin-left:10px;
+    border:1px solid dodgerblue;
+    border-radius:5px;
+}
+
+.border-b{
+    border: 3px solid #352a2c !important;
+}
+
+.hover-radio:hover{
+    background-color: var(--actual-company-primary-opacity);
+}
+
+.mg-token{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.wt-auto{
+    width: 50%;
+}
+
+.display-b{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.w-form{
+    width: 50%;
+}
+
+.mx-w-90{
+    max-width: 90% !important;
+}
+
+.responsive-table{
+    max-width: 100%;
+    overflow: auto;
+}
+
+.input-tempo{
+    border-radius: 0;
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5em;
+}

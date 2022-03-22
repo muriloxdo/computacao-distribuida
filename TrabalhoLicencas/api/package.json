@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --legacy-watch index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "~4.16.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "redis": "2.8.0",
+    "redisscan": "^2.0.0",
+    "request-promise": "^4.2.6",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

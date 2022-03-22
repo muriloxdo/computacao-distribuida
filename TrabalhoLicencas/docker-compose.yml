@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  api:
+    container_name: api
+    build: ./api
+    command: > 
+      sh -c "npm install && npm install nodemon --save-dev && npm start"
+    ports:
+      - 8081:3000
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: always
+    links:
+      - redis:redis
+
+  redis:
+    container_name: redis
+    image: "redis:latest"
+    ports:
+      - 6379:6379
+    restart: always

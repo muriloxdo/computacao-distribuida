@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+    <h2 class="w-75 m-auto text-center mb-1">
+      <span id='msg'></span></br>
+    </h2>
+
+    <div class="container-fluid mt-5 w-75" id="cpfcnpjDiv">
+      <div class="mb-3">
+        <label for="idInput" class="form-label" maxlength="18">Digite seu ID</label>
+        <input type="text" class="form-control" id="idInput" inputmode="numeric" required>
+      </div>
+      <button class="btn bg-company btn-right" id="btnRelease">release</button>
+      <button class="btn bg-company btn-right" id="btnRenew">renew</button>
+      <button class="btn bg-company btn-right" id="btnAcquire">acquire</button>
+      
+      <br>
+
+      <div class="container-fluid responsive-table mt-5 mb-2 p-5 w-75 flex-fill bg-container">
+        <table id="dataTable" class="table table-striped table-hover table-parceiros">
+          <thead>
+            <tr>
+              <th scope="col">ID User</th>
+              <th scope="col">Tempo Limite</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+  <script src="./axios/dist/axios.min.js"></script>
+  <script src="./jquery-3-5-1.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
